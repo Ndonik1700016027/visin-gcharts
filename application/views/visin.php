@@ -27,20 +27,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     bulanan['dataStr'] = '<?php echo $bulanan;?>';        
     bulanan['dataArray'] = JSON.parse(bulanan['dataStr']);
     //menggambar grafik
-    google.charts.setOnLoadCallback(function(){
-        drawChart(region['dataArray'], 'pie','region');       
-    });
-
-    google.charts.setOnLoadCallback(function(){
-	drawChart(region['dataArray'], 'pie','region');
-	drawChart(sales['dataArray'],'bar','sales');        
-    });
-
-    google.charts.setOnLoadCallback(function(){
-    drawChart(region['dataArray'], 'pie','region');
-    drawChart(sales['dataArray'],'bar','sales');
-    drawChart(produk['dataArray'],'bar','produk');                      
-    });
 
     google.charts.setOnLoadCallback(function(){
     drawChart(region['dataArray'], 'pie','region');
